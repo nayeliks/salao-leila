@@ -1,0 +1,91 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Cadastro de Login{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/icheck-bootstrap@3.0.1/icheck-bootstrap.min.css">
+{% endblock %}
+
+{% block body %}
+<div class="register-box">
+    <div class="register-logo">
+        <a href="#"><b>Leila</b>Hair</a>
+    </div>
+    <div class="card">
+        <div class="card-body register-card-body">
+            <p class="login-box-msg">Preencha os dados abaixo para criar sua conta</p>
+
+            <form id="register-form">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Descrição" name="description" id="description" required>
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-info-circle"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Login" name="login" id="login" required>
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-user"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-group mb-3">
+                    <input type="email" class="form-control" placeholder="Email" name="email" id="email" required>
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-envelope"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-group mb-3">
+                    <input type="password" class="form-control" placeholder="Senha" name="password" id="password" required>
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-lock"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="DDI" name="ddi" id="ddi" required>
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-phone-alt"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Número" name="numero" id="numero" required>
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-phone-alt"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <button type="submit" id="register-btn" class="btn btn-primary btn-block">Cadastrar</button>
+                    </div>
+                </div>
+            </form>
+            </br>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <a href="{{ path('login_page') }}" class="btn btn-secondary btn-block">Já tem uma conta? Fazer Login</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+
+    <script src="{{ asset('js/login/login.controller.js') }}"></script>
+    <script src="{{ asset('js/login/register.view.js') }}"></script>
+{% endblock %}

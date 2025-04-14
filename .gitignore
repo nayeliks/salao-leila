@@ -1,0 +1,12 @@
+# Ambiente
+.env
+.env.*.local
+
+# Cache e logs
+/var/
+
+# Dependências
+/vendor/
+
+# Binários gerados
+/bin/

@@ -1,0 +1,16 @@
+# Generic
+generic_error_request: Unexpected error. Please try again in a few moments or contact the system administrator.
+
+# Login
+login_description_required: "The description cannot be empty."
+login_login_required: "The login cannot be empty."
+login_email_invalid: "The email informed is invalid."
+login_password_required: "The password cannot be empty."
+login_language_required: "The language cannot be empty."
+login_type_invalid: "The user type informed is invalid."
+login_ddi_required: "The DDI cannot be empty."
+login_number_required: "The number cannot be empty."
+login_not_found: "Login not found."
+login_type_not_found: "Login type not found."
+login_no_inactive_logins_found: "No inactive logins found."
+login_not_admin_user: "The user is not an administrator."

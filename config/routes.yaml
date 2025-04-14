@@ -1,0 +1,7 @@
+login_routes:
+    resource: '../src/Api/Modules/Login/Controller/'
+    type: attribute
+    
+web_controllers:
+    resource: '../src/Web/Controller/'
+    type: attribute

@@ -1,0 +1,15 @@
+# Generic
+generic_error_request: Erro inesperado. Tente novamente em instantes ou entre em contato com o administrador do sistema.
+
+# Login
+login_description_required: "A descrição não pode estar vazia."
+login_login_required: "O login não pode estar vazio."
+login_email_invalid: "O e-mail informado não é válido."
+login_password_required: "A senha não pode estar vazia."
+login_language_required: "O idioma não pode estar vazio."
+login_type_invalid: "O tipo de usuário informado é inválido."
+login_ddi_required: "O DDI não pode estar vazio."
+login_number_required: "O número não pode estar vazio."
+login_not_found: "Login não encontrado."
+login_no_inactive_logins_found: "Nenhum login inativo encontrado."
+login_not_admin_user: "O usuário não é um administrador."

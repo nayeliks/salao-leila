@@ -1,0 +1,10 @@
+Tecnologias utilizadas:
+
+PHP – Linguagem principal utilizada.
+Symfony – Framework PHP desenvolvimento web.
+MySQL – Sistema de gerenciamento de banco de dados relacional.
+Docker – Ferramenta de conteinerização usada para facilitar a configuração e execução do ambiente.
+Respect\Validation – Biblioteca para validações simples e poderosas em PHP.
+Twig – Templates utilizado para renderizar o frontend.
+AdminLTE – Template com layout responsivo e componentes prontos.
+jQuery – Biblioteca JavaScript utilizada para manipulação do DOM e requisições assíncronas de forma simplificada.

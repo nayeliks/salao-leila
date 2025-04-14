@@ -1,0 +1,38 @@
+name: salao-leila-dev
+
+networks:
+  salao-network:
+    driver: bridge
+
+services:
+  php:
+    depends_on:
+        - mysql
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    container_name: php
+    volumes:
+      - .:/var/www/html
+    ports:
+      - "8000:80"
+    networks:
+      - salao-network
+
+  mysql:
+    image: mysql:5.7
+    container_name: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+    ports:
+      - "${MYSQL_PORT}:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+    networks:
+      - salao-network
+
+volumes:
+  db_data:
